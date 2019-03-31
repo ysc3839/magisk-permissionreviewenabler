@@ -1,0 +1,6 @@
+id=PermissionReviewEnabler
+name=Permission Review Enabler
+version=v2
+versionCode=200
+author=Milkice, ysc3839
+description=A simple magisk module to enable config_permissionReviewRequired in framework-res
