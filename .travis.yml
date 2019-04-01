@@ -1,3 +1,5 @@
+if: tag IS present
+
 language: android
 android:
   components:
