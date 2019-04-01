@@ -1,1 +1,1 @@
-rm /data/resource-cache/overlays.list
+rm -rf /data/resource-cache/*
