@@ -1,8 +1,15 @@
 #!/bin/bash
 
+[ -z "$ANDROID_HOME" ] && {
+  echo `$ANDROID_HOME not found!`
+  exit 1
+}
+
+export PATH="$ANDROID_HOME/build-tools/28.0.2":$PATH
+
 pushd app
 aapt package -M AndroidManifest.xml -S res/ \
-  -I ~/Android/Sdk/platforms/android-28/android.jar \
+  -I "$ANDROID_HOME/platforms/android-28/android.jar" \
   -F PermissionReviewEnabler.apk || exit 1
 
 mv PermissionReviewEnabler.apk ..
