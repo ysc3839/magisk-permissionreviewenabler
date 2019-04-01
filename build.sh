@@ -1,7 +1,7 @@
 #!/bin/bash
 
 [ -z "$ANDROID_HOME" ] && {
-  echo `$ANDROID_HOME not found!`
+  echo '$ANDROID_HOME not found!'
   exit 1
 }
 
